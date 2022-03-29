@@ -1,0 +1,258 @@
+.kontakt--section {
+    width: 100%;
+    height: auto;
+    min-height: 1202px;
+    background: url("../img/jpg/sitting-programer-overlay.jpg") center -139px no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 0px;
+    @media screen and (min-width: 768px) {
+        height: 1202px;
+    }
+}
+
+.kontakt--section-flex {
+    height: auto;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: 768px) {
+        height: 290px;
+    }
+}
+
+.kontakt--nadpis {
+    font-size: 48px;
+    font-family: $font-family-Museo100;
+    color: $blue-color;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    position: relative;
+    display: block;
+}
+
+.kontakt--nadpis:after {
+    content: "";
+    height: 1px;
+    position: absolute;
+    background: $blue-color;
+    width: 170px;
+    left: 0px;
+    right: 0px;
+    bottom: -8px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.kontakt--podnadpis {
+    color: $blue-color;
+    font-size: 30px;
+    font-family: $font-family-Museo700;
+    display: block;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.kontakt--popisek {
+    color: $blue-color;
+    font-size: 18px;
+    font-family: $font-family-Museo100;
+    margin-bottom: 10px;
+}
+
+.kontakt--sekce__info {
+    width: 100%;
+    height: auto;
+    min-height: 129px;
+    background: url("../img/jpg/field.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+        height: 129px;
+    }
+}
+
+.kontakt--info__flex div {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+    @media screen and (min-width: 992px) {
+        margin: 0px;
+    }
+}
+
+:root {
+    --succes-color: #2ecc71;
+    ;
+    --error-color: #e74c3c;
+}
+
+.form {
+    padding: 25px 15px;
+    background: white;
+    max-width: 833px;
+    margin: 0px auto;
+    width: 100%;
+    margin-top: 25px;
+    @media screen and (min-width: 768px) {
+        padding: 55px 71px;
+    }
+}
+
+.form-control {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control input::placeholder {
+    font-size: 18px;
+    font-family: $font-family-Museo500;
+    color: #81858e;
+    opacity: 1;
+}
+
+.form-control input {
+    padding-left: 20px;
+    font-size: 18px !important;
+    font-family: $font-family-Museo500;
+    color: #81858e;
+    opacity: 1;
+}
+
+.form-control input,
+.form-control textarea {
+    border: 1px solid #acacad;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    height: 70px;
+    border-left: 0px solid transparent;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: 0px solid transparent;
+}
+
+.form-control textarea {
+    height: 190px !important;
+}
+
+.form-control textarea {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: $font-family-Museo500;
+    color: #81858e;
+}
+
+.label-zprava {
+    padding: 26px 0px;
+    height: 190px !important;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--succes-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.kontakt--info__flex {
+    gap: 20px;
+    width: 100%;
+    display: block;
+    @media screen and (min-width: 768px) {
+        gap: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.kontakt--info__flex a:hover,
+.kontakt--info__flex a:focus {
+    color: white;
+}
+
+.change-padding {
+    padding: 0.7rem 3rem 0.7rem 3rem;
+}
+
+.form-control__flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-control__flex label {
+    text-align: right;
+    width: 90px;
+    height: 70px;
+    line-height: 1;
+    padding: 26px 0px;
+    white-space: nowrap;
+    border: 1px solid grey;
+    padding-left: 20px;
+    vertical-align: baseline;
+    border: 1px solid #acacad;
+    border-right: 0px solid transparent;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 18px;
+    font-family: $font-family-Museo700;
+    color: $blue-color;
+    text-transform: uppercase;
+}
+
+.form-control.error label {
+    border-color: var(--error-color);
+}
+
+.form-control.success label {
+    border-color: var(--succes-color);
+}
+
+.long-label {
+    width: 215px !important;
+}

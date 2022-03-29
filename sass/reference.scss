@@ -1,0 +1,84 @@
+.reference--main__section {
+    width: 100%;
+    height: auto;
+    min-height: 290px;
+    background: url("../img/jpg/reference_banner.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    padding-top: 0px;
+    @media screen and (min-width: 768px) {
+        height: 290px;
+    }
+}
+
+.reference--nadpis {
+    font-size: 48px;
+    font-family: $font-family-Museo100;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    position: relative;
+    display: block;
+}
+
+.reference--nadpis:after {
+    content: "";
+    height: 1px;
+    position: absolute;
+    background: white;
+    width: 170px;
+    left: 0px;
+    right: 0px;
+    bottom: -8px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.reference--podnadpis {
+    color: white;
+    font-size: 30px;
+    font-family: $font-family-Museo700;
+    display: block;
+    line-height: 1.1;
+}
+
+.ref-podnadpis__mb {
+    margin-bottom: 10px;
+}
+
+.reference--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    column-gap: 100px;
+    row-gap: 50px;
+    max-width: 1382px;
+    margin: auto;
+    width: 100%;
+    padding: 65px 0px 100px 0px;
+}
+
+.reference--grid article {
+    height: 100%;
+}
+
+.reference--grid__section {
+    padding: 0px 15px;
+}
+
+.centrovac-obrazku {
+    text-align: center;
+    padding: 35px 0px;
+}
+
+.uppercase--down {
+    text-transform: none;
+}

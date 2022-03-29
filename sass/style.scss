@@ -1,6 +1,60 @@
-// Theme
-@import "variables";
-
-// Reset
-@import "normalize";
-@import "base";
+        // Theme
+        @import "variables";
+        @import "fonty";
+        // Reset
+        @import "normalize";
+        @import "base";
+        // template part
+        @import "header-menu";
+        @import "sekce-onas";
+        @import "sekce-slider";
+        @import "buttons";
+        @import "blog";
+        @import "reference";
+        @import "kontakt";
+        * {
+            box-sizing: border-box;
+        }
+        
+        button:focus {
+            outline: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: $orange-color;
+            font-family: $font-family-Museo700;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: $blue-color;
+        }
+        
+        .custom-d-none {
+            display: none !important;
+        }
+        
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: rgb(159, 92, 15);
+            background: -moz-linear-gradient(180deg, rgba(159, 92, 15, 1) 0%, rgba(196, 110, 19, 1) 50%, rgba(233, 133, 34, 1) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(159, 92, 15, 1) 0%, rgba(196, 110, 19, 1) 50%, rgba(233, 133, 34, 1) 100%);
+            background: linear-gradient(180deg, rgba(159, 92, 15, 1) 0%, rgba(196, 110, 19, 1) 50%, rgba(233, 133, 34, 1) 100%);
+            height: 90px;
+            color: white;
+            padding: 45px 0px;
+            text-align: center;
+        }
+        
+        .drzak-nemazat {
+            padding-top: 139px;
+            display: block;
+        }
+        
+        .mb-1 {
+            margin-bottom: 10px;
+        }

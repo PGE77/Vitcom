@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Vitcom</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body onLoad="formValidation();">
+    <header id="header-nav">
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="nav--container">
+            <nav>
+                <div class="brand">
+                    <a href="/"><img src="img/png/vitcomLOGO.png" /></a>
+                </div>
+                <ul class="nav">
+                    <li class="nav__link">
+                        <img width="30px" height="30px" src="img/png/iko-nav-home.png" /><a href="/index.html">O nás</a></li>
+                    <li class="nav__link"> <img width="30px" height="30px" src="img/png/iko-nav-blog.png" /><a href="/blog.html">Blog</a></li>
+                    <li class="nav__link"> <img width="30px" height="30px" src="img/png/iko-nav-ref.png" /><a href="/reference.html">Reference</a></li>
+                    <li class="nav__link"> <img width="30px" height="30px" src="img/png/iko-nav-kontakt.png" /><a href="/kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="drzak-nemazat">
+    </div>
+    <section class="kontakt--section">
+        <section class="kontakt--section-flex">
+            <h1 class="kontakt--nadpis">Kontakt
+            </h1>
+
+            <strong class="kontakt--podnadpis">Napište nám... </strong>
+            <p class="kontakt--popisek">Využijte kontaktní formulář, co nejdříve Vám odpovíme. Děkujeme.</p>
+
+        </section>
+        <section class="kontakt--sekce__info">
+            <div class="kontakt--info__flex">
+                <div><img width="28px" height="28px" src="img/png/iko-phone.png" />
+                    <a href="tel:+420739818577">+ 420 739 818 577  
+                    </a>
+                </div>
+                <div> <img width="30px" height="23px" src="img/png/iko-mail.png" /><a href="mailto:info@vitcom.cz ">info@vitcom.cz   
+                </a></div>
+                <div><img width="23px" height="31px" src="img/png/iko-map.png" />
+                    <a href="#"> Ke Strašnické 52/22, Praha 10
+                    </a>
+                </div>
+            </div>
+
+
+
+        </section>
+        <div class="kontak--container">
+            <form id="form" class="form">
+
+                <div class="form-control">
+                    <div class="form-control__flex">
+                        <label for="username">Jméno</label>
+                        <input type="text" id="username" placeholder="Vaše celé jméno">
+                    </div>
+                    <small id="small-kontakt">Error Message</small>
+                </div>
+                <div class="form-control">
+                    <div class="form-control__flex">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Vaše emailová adresa">
+                    </div>
+                    <small id="small-kontakt">Error Message</small>
+                </div>
+
+
+                <div class="form-control">
+                    <div class="form-control__flex">
+                        <label for="heslo" class="long-label">Spamová ochrana</label>
+                        <input type="text" id="heslo" placeholder="Zadejte aktuální rok">
+                    </div>
+                    <small id="small-kontakt">Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <div class="form-control__flex">
+                        <label for="textArea" class="label-zprava">Zpráva</label>
+                        <textarea id="textArea">Text vaší zprávy...</textarea>
+                    </div>
+                    <small id="small-kontakt">Error Message</small>
+                </div>
+                <button class="onas--button__primary onas--button__btm change-padding">Odeslat zprávu</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <p>Vytvořil Vít Cigánek © VITCOM 2021
+        </p>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

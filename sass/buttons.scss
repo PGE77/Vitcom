@@ -1,0 +1,35 @@
+.onas--button__primary {
+    display: inline-block;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #d27028;
+    border: none;
+    padding: 0.955rem 3rem 0.7rem 3rem;
+    transition: background 1s ease-in-out;
+    background: rgb(159, 92, 15);
+    background: -moz-linear-gradient(180deg, rgba(159, 92, 15, 1) 0%, rgba(196, 110, 19, 1) 50%, rgba(233, 133, 34, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(159, 92, 15, 1) 0%, rgba(196, 110, 19, 1) 50%, rgba(233, 133, 34, 1) 100%);
+    background: linear-gradient(180deg, rgba(159, 92, 15, 1) 0%, rgba(196, 110, 19, 1) 50%, rgba(233, 133, 34, 1) 100%);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-family: $font-family-Museo700;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 50px;
+}
+
+.onas--button__primary:hover {
+    color: #fff;
+    background: rgb(233, 133, 34);
+    background: -moz-linear-gradient(180deg, rgba(233, 133, 34, 1) 0%, rgba(196, 110, 19, 1) 50%, rgba(159, 92, 15, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(233, 133, 34, 1) 0%, rgba(196, 110, 19, 1) 50%, rgba(159, 92, 15, 1) 100%);
+    background: linear-gradient(180deg, rgba(233, 133, 34, 1) 0%, rgba(196, 110, 19, 1) 50%, rgba(159, 92, 15, 1) 100%);
+}

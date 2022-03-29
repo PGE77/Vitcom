@@ -1,0 +1,65 @@
+.onas--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    -ms-flex-align: center;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 20px;
+    @media screen and (min-width: 768px) {
+        padding-right: 108px;
+        padding-top: 0px;
+    }
+}
+
+.onas--container strong {
+    font-size: 30px;
+    font-family: $font-family-Museo700;
+    color: $blue-color;
+    display: block;
+    line-height: 30px;
+    text-transform: none;
+}
+
+.onas--container .onas__bottom {
+    margin-bottom: 32px;
+}
+
+.onas--container .onas__orange {
+    color: $orange-color;
+    display: unset;
+    text-transform: none;
+}
+
+.onas--container p {
+    font-size: 18px;
+    font-family: $font-family-Museo100;
+    color: $blue-color;
+    text-transform: none;
+}
+
+.onas--button__btm {
+    margin: 27px 0px;
+}
+
+.onas--container h1 {
+    font-size: 48px;
+    font-family: $font-family-Museo100;
+    color: $blue-color-h1;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.onas--container h1:after {
+    content: "";
+    height: 1px;
+    position: absolute;
+    background: $blue-color-h1;
+    width: 100%;
+    left: 0px;
+    bottom: 0;
+}

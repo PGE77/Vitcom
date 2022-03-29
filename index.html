@@ -1,13 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Sass Starter &middot; A starter template for building websites using Sass.</title>
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no" />
+    <title>Vitcom</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+
+<body onLoad="showSlides();">
+    <header id="header-nav">
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="nav--container">
+            <nav>
+                <div class="brand">
+                    <a href="/"><img src="img/png/vitcomLOGO.png" /></a>
+                </div>
+                <ul class="nav">
+                    <li class="nav__link"><img width="30px" height="30px" src="img/png/iko-nav-home.png" /><a href="/index.html">O nás</a></li>
+                    <li class="nav__link"> <img width="30px" height="30px" src="img/png/iko-nav-blog.png" /><a href="/blog.html">Blog</a></li>
+                    <li class="nav__link"> <img width="30px" height="30px" src="img/png/iko-nav-ref.png" /><a href="/reference.html">Reference</a></li>
+                    <li class="nav__link"> <img width="30px" height="30px" src="img/png/iko-nav-kontakt.png" /><a href="/kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="drzak-nemazat">
+    </div>
+    <section class="header--container">
+        <div class="onas--container">
+            <article>
+                <h1>O nás </h1>
+                <strong>Vítejte na webu<strong class="onas__orange"><a
+                                href="/"> vitcom.cz</a></strong>,</strong><strong class="onas__bottom">zaměřeném na tématiku a podporu IT
+                    </strong>
+                <p>Jmenuji se Vít Cigánek a se svým kamarádem Lukášem Mikuleckým </p>
+                <p>poskytujeme technickou podporu všeho druhu.</p>
+                <p>Na našich stránkách mimojiné naleznete <a href="/blog.html">blog</a> a <a href="/forum.html">fórum</a>.</p>
+                <p>Pokud nás budete chtít kontaktovat klikněte <a href="/index.html">zde</a>.</p>
+                <p>Můžete se také podívat na naše <a href="/index.html">reference</a>.</p>
+                <p><a href="" class="onas--button__primary
+                            onas--button__btm">Potřebuji It podporu</a></p>
+            </article>
+        </div>
+    </section>
+    <section class="slider--container">
+        <a id="stop-tlacitko" class="prev" onclick="plusSlides(-1)"></a>
+        <!-- Slideshow container -->
+        <div class="slideshow-container" id="slider--containerID">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="mySlides--container">
+                    <div class="mySlides--50"><img alt="thumb" src="img/jpg/thumb.jpg" /></div>
+                    <div class="mySlides--50">
+                        <h2 class="mySlides--nadpis__sekce">
+                            Na blogu
+                        </h2>
+                        <h2 class="mySlides--nadpis__clanku">
+                            Zde bude nadpis článku H2
+                        </h2>
+                        <p class="mySlides--popisek">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Aenean placerat. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Ut enim
+                            ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali...
+                        </p>
+                        <p>
+                            <a href="" class="onas--button__primary
+                                    onas--button__btm">Přečíst na blogu</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="mySlides--container">
+                    <div class="mySlides--50"> <img alt="thumb" src="img/jpg/thumb.jpg" /></div>
+                    <div class="mySlides--50">
+                        <h2 class="mySlides--nadpis__sekce">
+                            Na blogu
+                        </h2>
+                        <h2 class="mySlides--nadpis__clanku">
+                            Zde bude nadpis článku H2 Další</h2>
+                        <p class="mySlides--popisek">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Aenean placerat. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Ut enim
+                            ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali...
+                        </p>
+                        <p>
+                            <a href="" class="onas--button__primary
+                                    onas--button__btm">Přečíst na blogu</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="mySlides--container">
+                    <div class="mySlides--50">
+                        <img alt="thumb" src="img/jpg/thumb.jpg" />
+                    </div>
+                    <div class="mySlides--50">
+                        <h2 class="mySlides--nadpis__sekce">
+                            Na blogu
+                        </h2>
+                        <h2 class="mySlides--nadpis__clanku">
+                            Zde bude nadpis článku H2 ještě další
+                        </h2>
+                        <p class="mySlides--popisek">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Aenean placerat. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Ut enim
+                            ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali...
+                        </p>
+                        <p>
+                            <a href="" class="onas--button__primary
+                                    onas--button__btm">Přečíst na blogu</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Next and previous buttons -->
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center" class="custom-d-none">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <a id="stop-tlacitko" class="next" onclick="plusSlides(1)"></a>
+    </section>
+    <footer>
+        <p>Vytvořil Vít Cigánek © VITCOM 2021
+        </p>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
 </html>
